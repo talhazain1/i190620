@@ -1,66 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp"
-    tools:context=".DashboardActivity">
+    android:layout_height="match_parent">
 
-    <!-- Welcome message -->
     <TextView
-        android:id="@+id/welcomeMessage"
+        android:id="@+id/time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome, User!"
-        android:textSize="18sp"
+        android:text="9:41"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time"
+        android:layout_marginTop="17dp"
+        android:text="Welcome, Daud"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/featured_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome"
+        android:layout_marginTop="36dp"
+        android:text="Featured Items"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_name_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        android:text="Item Name"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/item_location_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_name_1"
+        android:layout_marginTop="10dp"
+        android:text="Islamabad."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/item_price_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp" />
+        android:layout_marginTop="220dp"
+        android:text="$10/hr"
+        android:textSize="12sp" />
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/featuredItemViewPager"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@id/welcomeMessage"
-        android:layout_marginTop="16dp"/>
-
-    <!-- "Your item" RecyclerView -->
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/item_date_1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="245dp"
+        android:text="7th Mar"
+        android:textSize="12sp" />
 
-        <TextView
-            android:id="@+id/titleTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:text="Title" />
-
-        <TextView
-            android:id="@+id/descriptionTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Description" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:src="@drawable/" /> <!-- Replace with your image source -->
-
-    </LinearLayout>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/yourItemRecyclerView"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/item_name_2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/featuredItemViewPager"
-        android:layout_marginTop="16dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/featuredItemViewPager" />
+        android:layout_below="@id/item_name_1"
+        android:layout_marginTop="253dp"
+        android:text="Item Name"
+        android:textSize="14sp" />
 
+    <TextView
+        android:id="@+id/item_location_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_name_2"
+        android:layout_marginTop="2dp"
+        android:text="Islamabad"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/item_price_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="490dp"
+        android:text="$10/hr"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/item_date_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="510dp"
+        android:text="7th Mar"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/your_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/featured_items"
+        android:layout_marginTop="214dp"
+        android:text="Your Items"
+        android:textSize="20sp" />
 </RelativeLayout>
