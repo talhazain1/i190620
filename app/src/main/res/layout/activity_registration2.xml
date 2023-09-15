@@ -76,9 +76,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/emailEditText"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="23dp"
         android:hint="Enter contact number"
-        android:inputType="phone"/>
+        android:inputType="phone" />
+
     <TextView
         android:id="@+id/CountryText"
         android:layout_width="wrap_content"

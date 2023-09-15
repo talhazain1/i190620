@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/chatHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Makenna Dias"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+    <ListView
+        android:id="@+id/conversationListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chatHeading"
+        android:layout_alignParentTop="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/messageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/sendButton"
+            android:layout_toStartOf="@+id/sendButton"
+            android:hint="Type a message" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="#e06d00"
+            android:textColor="@color/white"
+            android:text="Send" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

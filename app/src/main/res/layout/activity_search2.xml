@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingTop="50dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp">
+
+
+
+    <!-- Search bar at top -->
+
+    <!-- Navigation bar at bottom -->
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search..."
+        android:imeOptions="actionSearch"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/search_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchBar"
+        android:textSize="24dp"
+        android:text="Find exactly what you need!"/>
+
+    <TextView
+        android:id="@+id/recent_searches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_text"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="\nRecent Searches"/>
+
+    <TextView
+        android:id="@+id/searches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recent_searches"
+        android:layout_marginTop="2dp"
+        android:text="\nItem Number One\n\nItem Number Two\n\nItem Number Three"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/popular_searches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searches"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="\nPopular Searches"/>
+    <TextView
+        android:id="@+id/pop_searches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popular_searches"
+        android:layout_marginTop="2dp"
+        android:text="\nItem Number One\n\nItem Number Two\n\nItem Number Three"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:background="#e06d00"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:background="#e06d00"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/chatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:background="#e06d00"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:background="#e06d00"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
